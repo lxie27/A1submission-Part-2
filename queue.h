@@ -6,6 +6,8 @@
 * Author: lesliexie
 * THIS REMAINS INCOMPLETE
 */
+#ifndef QUEUE_H
+#define QUEUE_H
 
 class Queue {
 public:
@@ -33,3 +35,5 @@ private:
 
 //Creates a Queue
 Queue* create();
+
+#endif

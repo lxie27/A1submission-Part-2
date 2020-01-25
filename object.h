@@ -1,3 +1,5 @@
+#ifndef OBJECT_H
+#define OBJECT_H
 #pragma once
 #include <string>
 
@@ -25,3 +27,5 @@ public:
 private:
 	
 };
+
+#endif
