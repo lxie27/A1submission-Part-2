@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <stdlib.h>
 #include "object.h"
 /**
 * A class to represent Queues.
@@ -7,7 +8,7 @@
 * THIS REMAINS INCOMPLETE
 */
 
-class Queue {
+class Queue : public Object {
 public:
 
 	//Pushes an Object onto the Queue
@@ -21,4 +22,9 @@ public:
 
 	//Deletes this Queue from memory
 	virtual ~Queue();
+
+  bool equals(Object*);
+
+  size_t hash();
 };
+
