@@ -1,39 +1,30 @@
 #pragma once
 #include <string>
+#include <stdlib.h>
 #include "object.h"
 /**
 * A class to represent Queues.
 * Author: lesliexie
 * THIS REMAINS INCOMPLETE
 */
-#ifndef QUEUE_H
-#define QUEUE_H
 
-class Queue {
+class Queue : public Object {
 public:
 
 	//Pushes an Object onto the Queue
-	void push(Object*);
+	virtual void push(Object*);
 	
-	void push(char*);
-
 	//Returns the Object at end of the Queue
 	Object* pop();
 
-	char* pop();
-
 	//Returns true if this Queue is empty, false otherwise
-	bool isEmpty();
+	virtual bool isEmpty();
 
 	//Deletes this Queue from memory
-	void destroy();
+	virtual ~Queue();
 
+  bool equals(Object*);
 
-private:
-
+  size_t hash();
 };
 
-//Creates a Queue
-Queue* create();
-
-#endif
